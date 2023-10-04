@@ -1,4 +1,4 @@
-<ng-container *ngIf="showReportIssue ===false" >
+<ng-container *ngIf="showReportIssue ===false && !editIssue" >
 <button class="btn-primary btn" (click)="showReportIssue = true">Add new Issue</button>
 <clr-datagrid>
 	<clr-dg-column [clrDgField]="'issueNo'"
